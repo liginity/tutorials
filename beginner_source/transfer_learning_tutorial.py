@@ -369,7 +369,7 @@ def visualize_model_predictions(model,img_path):
         ax.set_title(f'Predicted: {class_names[preds[0]]}')
         imshow(img.cpu().data[0])
         
-        model.train(mode=was_training)
+    model.train(mode=was_training)
 
 ######################################################################
 #
